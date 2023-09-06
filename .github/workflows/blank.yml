@@ -27,9 +27,9 @@ jobs:
 
       - name: Run a multi-line script
         run: |
-          cd Andrew-Erickson,
-          gradle test,
-          cd ..,
-          cd Carter-Johnson,
-          gradle test,
+          cd Andrew-Erickson
+          gradle test
+          cd ..
+          cd Carter-Johnson
+          gradle test
 
