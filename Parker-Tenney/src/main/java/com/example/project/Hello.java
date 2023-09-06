@@ -2,7 +2,7 @@ package com.example.project;
 
 public class Hello {
 
-    public void Print(String i){
+    static void Print(String i){
         System.out.println(i);
     }
 
