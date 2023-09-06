@@ -32,4 +32,26 @@ jobs:
           cd ..
           cd Carter-Johnson
           gradle test
+          cd ..
+          cd Kerri-Jensen
+          gradle test
+          cd ..
+          cd Louaivasa-Laulu
+          gradle test
+          cd ..
+          cd Nathan-Soderquist
+          gradle test
+          cd ..
+          cd Owen-Chadwick
+          gradle test
+          cd ..
+          cd Parker-Tenney
+          gradle test
+          cd ..
+          cd Rebekah-Jensen
+          gradle test
+          cd ..
+          cd Valeria-Poveda-Molina
+          gradle test
+          cd ..
 
