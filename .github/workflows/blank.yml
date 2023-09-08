@@ -134,4 +134,44 @@ jobs:
           cd Valeria-Poveda-Molina
           gradle test
           cd ..
+  Gabriel-Boivin:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3   
+      - name: Run a multi-line script
+        run: |          
+          cd Gabriel-Boivin
+          gradle test
+          cd ..
+  Carlos-Martich-Peguero:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3   
+      - name: Run a multi-line script
+        run: |          
+          cd Carlos-Martich-Peguero
+          gradle test
+          cd ..
+  Jingchen-Yue:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3   
+      - name: Run a multi-line script
+        run: |          
+          cd Jingchen-Yue
+          gradle test
+          cd ..
+          
 
