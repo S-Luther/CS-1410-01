@@ -3,18 +3,19 @@ package com.example.project;
 public class Hello {
 
 
-static void Print (String i){
-
-    System.out.println("Hello World!");
-}
-
 public static void main(String[] args){
 
-    
+int burgees [][] = {{1,2},{3,4}};
+
+    for(int i =0; i <2, i++){
+        for(int j = 0; j<2; j++){
+            System.out.print();
+
+        }
+        System.out.print();
+    }
 
 
 }
-
-
 }
 

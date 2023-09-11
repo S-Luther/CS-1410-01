@@ -1,31 +1,18 @@
 public class Hello{
 
-
-    static void Print(String){
-    System.out.println(String);
-    }
-
     public static void main(String[] args){
 
-String[] arr = {Hello World}
+	    	int[][] arr = {{1,2},{3,4}};
 
+	    	for(int j = 0; j < arr.length; j++){
+	    	for(int i = 0; i < arr.length; i++){
+		    	System.out.print(arr[j][i]);
 
+	    	}
+	    	System.out.println("");
 
-    }
-
+	}
 }
-tatic void sayNumOfApples(int i){
-        System.out.println(i+" Apples");
-    }
+}
 
-
-    public static void main(String[] args){
-
-        int[] arr = {0,1,2};
-
-        sayNumOfApples(arr[0]);
-
-
-    }
-
-
+//perfect
