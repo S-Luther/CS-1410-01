@@ -1,7 +1,7 @@
 package com.example.project;
 
-   public class Hello{
-    public static void main(String[] args){
+   //public class Hello{
+    //public static void main(String[] args){
        int num = 0;
 
 		int [][][]arr = new int [2][2][2];
@@ -30,10 +30,31 @@ package com.example.project;
 				}
 			}
 		}
+  //  }
+//}
+
+public class EscapeSeqPractice {
+    public static void main(String[] args) {
+
+        char move = UP;
+        String RUBIK;
+        switch (move) {
+            case u:  monthString = "UP";
+                     break;
+            case D:  monthString = "DOWN";
+                     break;
+            case R:  monthString = "RIGHT";
+                     break;
+            case L:  monthString = "Left";
+                     break;
+            case F:  monthString = "Front";
+                     break;
+            case B:  monthString = "Back";
+                     break;
+        }
+		 System.out.println(RUBIK);
     }
 }
-
-
 
 
 

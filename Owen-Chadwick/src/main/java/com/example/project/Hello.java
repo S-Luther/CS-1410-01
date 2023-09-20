@@ -1,40 +1,52 @@
 package com.example.project;
-//you'll nned this
+import java.util.Scanner;
+//you'll need this
 
 public class Hello{
 
     public static void main(String[] args){
+// import java.util.Scanner;
 
-
+		
+		String move = "a";
+		
+		Scanner in = new Scanner(System.in);
+		System.out.println("How do you want to move your cube homie?");
+		move = in.next();
+		
+	switch(move.toLowerCase()) {
 	
-int num = 1;
+	case "u":
+		System.out.println("Input: " + move );
+		System.out.println("Retun: Up");
+		break;
+	case "d" :
+		System.out.println("Input: " + move );
+		System.out.println("Retun: Down");
+		break;
+	case "r" :
+		System.out.println("Input: " + move );
+		System.out.println("Retun: Right");
+		break;
+	case "l" :
+		System.out.println("Input: " + move );
+		System.out.println("Retun: Left");
+		break;
+	case "f" :
+		System.out.println("Input: " + move );
+		System.out.println("Retun: Front");
+		break;
+	case "b" :
+		System.out.println("Input: " + move );
+		System.out.println("Retun: Back");
+		break;
 
-		int [][][]arr = new int [2][2][2];
+default:
+	System.out.println("Your cube is broken, try again dawg");
+	break;
 		
-		for(int k = 0; k < 2; k++) {
-
-		for(int j = 0; j < 2; j++) {
-
-		for(int i = 0; i < 2; i++) {
-			
-			arr[i][j][k] = num++;
-			
-					}
-				}
 			}
-		
-		for(int k = 0; k < 2; k++) {
-
-			for(int j = 0; j < 2; j++) {
-
-			for(int i = 0; i < 2; i++) {
-				
-				System.out.print(arr[i][j][k] + " ");
-				}
-			}
-		}
-
-
 	}
 }
+
 

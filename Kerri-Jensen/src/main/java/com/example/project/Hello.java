@@ -1,23 +1,41 @@
 package com.example.project;
     public class Hello{
         public static void main(String[] args){
-           
-            int[][][] data = new int[2][2][2];
-            int temp = 0;
+           //maybe try to create a String variable and set it equal to "U" or something
 
+            //Does that mean I have to make U, D, 
+           switch (int){
 
-            for (int i = 0; i < 2; i++){
-                for(int j = 0; j < 2; j++){
-                    for(int k = 0; k < 2; k++){
-                        temp++;
-                        data[i][j][k] = temp;
-                    System.out.print(data[i][j][k]);
+            case 1:
+            int U = 
+            System.out.println("Up");
+            break;
 
-                }
-            }
+            case 2:
+            int D = 
+            System.out.println("Down");
+            break;
 
+            case 3:
+            int R = 
+            System.out.println("Right");
+            break;
 
+            case 4:
+            int L =
+            System.out.println("Left");
+            break;
+
+            case 5:
+            int F = 
+            System.out.println("Front");
+            break;
+
+            case 6: 
+            int B = 
+            System.out.println("Back");
+            break;
         }
-        
+        System.out.println(int)
     }
     }

@@ -9,27 +9,35 @@ public class Hello{
 
     public static void main(String[] args) {
 
-    int[][][] oneToEight = new int[2][2][2];
-        int currentNum = 1;
+    
+    char move = "U";
+
+    //does it need the toLower? like could the expression just be move?
+    //ive been using chars in the rubiks cube project already so i wanted to stick  with those 
+        //fair enough
         
-        for (int i = 0;i == 1 ;i++) {
-            for (int j = 0; j == 1 ; j++) {
-                for (int k = 0; k == 1  ;k++ ) {
-                    oneToEight[i][j][k] = currentNum;
-                    currentNum++;
-                }
-            }
-        }
-
-        for (int i = 0; i == 1 ;i++) {
-
-            for (int j = 0; j == 1 ; j++) {
-                System.out.print(" , ");
-                for (int k = 0; k == 1  ;k++ ) {
-                    System.out.print(oneToEight[i][j][k]);
-                    System.out.print(" ");
-                }
-            }
+    switch(move) {
+        //needs colons
+        case 'u':
+            System.out.println("Up");
+            break;
+        case 'd'
+            System.out.println("Down");
+            break;
+        case 'r'
+            System.out.println("Right");
+            break;
+        case 'l'
+            System.out.println("Left");
+            break;
+        case 'f'
+            System.out.println("Front");
+            break;
+        case 'b'
+            System.out.println("Back");
+            break;
+        
+        
         }
 
     }

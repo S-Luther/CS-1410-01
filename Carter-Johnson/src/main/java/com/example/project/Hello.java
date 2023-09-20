@@ -2,15 +2,26 @@ package com.example.project;
 
 public class Hello {
     public static void main(String[] args) {
-        int [][][] a = new int [2][2][2];
-        int add = 1;
-        for (int i = 0; i < 2; i++) {
-            for (int j = 0; j < 2; j++) {
-                for (int k = 0; k < 2; k++) {
-                    a [i][j][k] = add++;
-                    System.out.print(a [i][j][k]);
-                }
-            }
+        String move = "U";
+        switch(move.toLowerCase()) {
+            case "u":
+                System.out.println("Up");
+                break;
+            case "d":
+                System.out.println("Down");
+                break;
+            case "r":
+                System.out.println("Right");
+                break;
+            case "l":
+                System.out.println("Left");
+                break;
+            case "f":
+                System.out.println("Front");
+                break;
+            case "b":
+                System.out.println("Back");
+                break;
         }
     }
 }
