@@ -1,36 +1,31 @@
 package com.example.project;
 
-public class TestHello {
+public class Hello {
 
-  public static void main(String[] args) {    
+  
 
-      //declaring array as 3 constiting of 3D
+  public int sum(int a, int b){
 
-      int[][][] ArrayProper = {
+      return a + b;
 
-        //inserting values in each row and column of first "table"
-
-        {{1,2},
-        {3,4}
-        },
-
-        //inserting values in each row and column of second "table"
-
-        {{5,6},
-        {7,8}
-        }
-
-    }
-
-  for (int i=0; i<2; i++){
-    for (int j=0; j<2; j++){
-      for (int k=0; k<2; k++){
-        system.out.print(ArrayProper[i][j][k]);
-    
-       }
-       system.out.println();
-      }
-      system.out.println();
-    }
   }
+
+  public static void main(String[] args) { 
+
+
+        Hello hello = new Hello();
+                
+        
+        new sum().show();
+
+
+        System.out.print(hello.sum(12, 3));
+        //If you wrap ^^^this line in a println it will run as intended
+
+        //^^^thank you!
+
+  }
+
+
+
 }

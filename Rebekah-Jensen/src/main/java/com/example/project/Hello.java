@@ -1,30 +1,30 @@
 package com.example.project;
 
-public class Hello{
-    public static void main(String[] args){
+public class Hello {
+    
+    
+    public int sum(int i, int j){
+        return i + j;
+    }   
 
-        String move = "U" "D" "R" "L" "F" "B";
-        String actualWords();
 
-        switch(move.toActualWords()){
-            case = "Up";
-                break;
-            case = "Down";
-                break;
-            case = "Right";
-                break;
-            case = "Left";
-                break;
-            case = "Front";
-                break;
-            case = "Back";
-                break;
-
-        }
-
-    System.out.println("Input:" + move);
-    System.out.println("Return:" + actualWords);
-    }
-}
-
+    
+       
         
+
+
+  public static void main(String[] args) {  
+
+    //then here create an object of Hello
+
+    //instead of String lets have this be of type Hello
+    Hello Hello = new Hello();
+
+   
+//then in here you can call Hello.sum(4,5)
+    System.out.print(Hello.sum(4,5));
+
+    // new Hello().sum();
+
+  }
+}

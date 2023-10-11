@@ -3,33 +3,21 @@ package com.example.project;
 public class Hello {
 
 
+    public int sum(int a, int b){
+        int c = a + b;
+        return c;
+    }
+        
 
     public static void main(String[] args){
         
-        String move = "R";
+        Hello object = new Hello();
 
-        switch(move.toUpperCase()){
-            case "U":
-                System.out.println("Up");
-                break;
-            case "D":
-                System.out.println("Down");
-                break;
-            case "R":
-                System.out.println("Right");
-                break;
-            case "L":
-                System.out.println("Left");
-                break;
-            case "F":
-                System.out.println("Front");
-                break;
-            case "B":
-                System.out.println("Back");
-                break;
-            default:
-                System.out.println("Not a move!");
-        }
+        
+        System.out.println(object.sum(5,9));
+
+
+
 
     }
 

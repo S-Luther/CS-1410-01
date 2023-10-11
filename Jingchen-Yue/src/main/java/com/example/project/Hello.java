@@ -36,20 +36,20 @@ package com.example.project;
 public class EscapeSeqPractice {
     public static void main(String[] args) {
 
-        char move = UP;
+        String move = UP;
         String RUBIK;
         switch (move) {
-            case u:  monthString = "UP";
+            case u:  RUBIK = "UP";
                      break;
-            case D:  monthString = "DOWN";
+            case D:  RUBIK = "DOWN";
                      break;
-            case R:  monthString = "RIGHT";
+            case R:  RUBIK = "RIGHT";
                      break;
-            case L:  monthString = "Left";
+            case L:  RUBIK = "Left";
                      break;
-            case F:  monthString = "Front";
+            case F:  RUBIK = "Front";
                      break;
-            case B:  monthString = "Back";
+            case B:  RUBIK = "Back";
                      break;
         }
 		 System.out.println(RUBIK);

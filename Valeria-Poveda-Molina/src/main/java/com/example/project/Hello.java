@@ -1,10 +1,20 @@
 package com.example.project;
 
 public class Hello {
+    
     public static void main (String[] args){
-        
+        getDirection('U');
+        getDirection('D');
+        getDirection('R');
+        getDirection('L');
+        getDirection('F');
+        getDirection('B');
+    public static void getDirection(char moves)
+
+    //looks almost perfect although you can just print out up instead of setting it equal to something
         switch (moves){
         case 'U':
+        //System.out.print("up"); like this
             move = "up";
             break;
          case 'D':
@@ -28,3 +38,7 @@ public class Hello {
         System.out.print(move);
     }
 }
+
+
+
+
