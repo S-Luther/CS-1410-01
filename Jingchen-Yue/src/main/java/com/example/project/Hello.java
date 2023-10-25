@@ -1,59 +1,50 @@
 package com.example.project;
 
-   //public class Hello{
-    //public static void main(String[] args){
-       int num = 0;
+class Friend {
 
-		int [][][]arr = new int [2][2][2];
-		
-		for(int k = 0; k < 2; k++) {
+    private boolean happy;
+    private String name;
 
-		for(int j = 0; j < 2; j++) {
-
-		for(int i = 0; i < 2; i++) {
-			
-			arr[i][j][k] = num++;
-			
-					}
-				}
-			}
-		
-		int num2 = 0;
-		for(int k = 0; k < 2; k++) {
-
-			for(int j = 0; j < 2; j++) {
-
-			for(int i = 0; i < 2; i++) {
-				
-				System.out.print(arr[i][j][k] + " ");
-						num2++;
-				}
-			}
-		}
-  //  }
-//}
-
-public class EscapeSeqPractice {
-    public static void main(String[] args) {
-
-        String move = UP;
-        String RUBIK;
-        switch (move) {
-            case u:  RUBIK = "UP";
-                     break;
-            case D:  RUBIK = "DOWN";
-                     break;
-            case R:  RUBIK = "RIGHT";
-                     break;
-            case L:  RUBIK = "Left";
-                     break;
-            case F:  RUBIK = "Front";
-                     break;
-            case B:  RUBIK = "Back";
-                     break;
-        }
-		 System.out.println(RUBIK);
+    public Friend(String N) {
+        name = N;
+        System.out.println("My name is " + name);
     }
+
+    public void makeHappy() {
+        happy = true;
+    }
+
+    public void makeSad() {
+        happy = false;
+    }
+
+    public void askName() {
+        System.out.println("I am " + name);
+    }
+
+    public void askMood() {
+        if (happy == true) {
+            System.out.println(" happy!");
+        } else {
+            System.out.println(" sad");
+        }
+    }
+
+}
+
+//looks perfect!
+
+
+public class Hello {
+   public static void main(String[] args){
+        
+        Friend g = new Friend("didi");
+        g.makeHappy();
+        g.askMood();
+        g.makeSad();
+        g.askMood();
+}
+
 }
 
 

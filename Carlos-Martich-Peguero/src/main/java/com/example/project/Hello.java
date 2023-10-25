@@ -1,20 +1,36 @@
 package com.example.project;
 
+
+
+class Friend{
+    private boolean happy;
+    private String name;
+
+    public Frind(String N){
+
+        name = N;
+    }
+
+
+    
+    public void makeHappy() {
+        happy = true;
+        
+    }
+    
+    public void makeSad() {
+        happy = false;
+
+        
+    }
+}
+
 public class Hello {
 
 
 public static void main(String[] args){
 
-int burgees [][] = {{1,2},{3,4}};
-
-    for(int i =0; i <2, i++){
-        for(int j = 0; j<2; j++){
-            System.out.print();
-
-        }
-        System.out.print();
-    }
-
+Friend Carlos = new Friend("Carlos");
 
 }
 }

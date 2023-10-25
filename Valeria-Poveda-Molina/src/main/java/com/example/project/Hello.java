@@ -1,44 +1,36 @@
-package com.example.project;
+public class Friend {
+    private boolean happy;
+    private String name;
 
-public class Hello {
-    
-    public static void main (String[] args){
-        getDirection('U');
-        getDirection('D');
-        getDirection('R');
-        getDirection('L');
-        getDirection('F');
-        getDirection('B');
-    public static void getDirection(char moves)
+    public Friend(String N){
+        name = N;
+    }
 
-    //looks almost perfect although you can just print out up instead of setting it equal to something
-        switch (moves){
-        case 'U':
-        //System.out.print("up"); like this
-            move = "up";
-            break;
-         case 'D':
-            move = "down";
-            break;
-         case 'R':
-            move = "right";
-            break;
-         case 'L':
-            move = "left";
-            break;
-         case 'F':
-            move = "front";
-            break;
-         case 'B':
-            move = "back";
-            break;
-        default;
-            break;
-        }
-        System.out.print(move);
+    public void makeHappy(){
+        happy = true;
+    }
+
+    public void makeSad(){
+        happy = false;
+    }
+
+    public String getName(){
+        return name;
+    }
+
+    public boolean isHappy(){
+        return happy;
     }
 }
+public class Hello{
+    public static void main(String[] args){
+        Friend first = new Friend("Peter");
+        Friend second = new Friend("Maddy");
 
+        first.makeHappy();
+        second.makeSad();
 
-
-
+        System.out.println(first.getName() + " is happy:" + first.isHappy());
+        System.out.println(second.getName() + " is happy:" + second.isHappy());
+    }
+}

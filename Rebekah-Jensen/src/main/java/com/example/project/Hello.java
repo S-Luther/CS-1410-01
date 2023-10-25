@@ -1,30 +1,32 @@
 package com.example.project;
-
-public class Hello {
-    
-    
-    public int sum(int i, int j){
-        return i + j;
-    }   
-
-
-    
-       
-        
-
-
-  public static void main(String[] args) {  
-
-    //then here create an object of Hello
-
-    //instead of String lets have this be of type Hello
-    Hello Hello = new Hello();
-
-   
-//then in here you can call Hello.sum(4,5)
-    System.out.print(Hello.sum(4,5));
-
-    // new Hello().sum();
-
+//perfect
+public class Hello{
+  public static void main(String[] args){
   }
 }
+class Friend{
+  private boolean happy;
+  private String name;
+  public Friend(String N){
+    name = N;
+  }
+
+  public void makeHappy(){
+    if(happy == true){
+      System.out.println("True :)");
+    }
+
+    happy = true;
+  }
+
+  public void makeSad(){
+    if(happy =! true){
+      System.out.println("False :(");
+    }
+    happy = false;
+  }
+
+}
+
+    
+//nice! Looks great!

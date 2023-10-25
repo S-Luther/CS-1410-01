@@ -1,79 +1,47 @@
 package com.example.project;
 
 
-class Cube {
-    public String[][][] value =  {
-        {
-            {"r","r","r"},
-            {"r","r","r"},
-            {"r","r","r"},
-        },
-        {
-            {"b","b","b"},
-            {"b","b","b"},
-            {"b","b","b"},
-        },
-        {
-            {"w","w","w"},
-            {"w","w","w"},
-            {"w","w","w"},
-        },
-        {
-            {"y","y","y"},
-            {"y","y","y"},
-            {"y","y","y"},
-        },
-        {
-            {"o","o","o"},
-            {"o","o","o"},
-            {"o","o","o"},
-        },
-        {
-            {"g","g","g"},
-            {"g","g","g"},
-            {"g","g","g"},
-        },
-    };
 
-    public Cube(){
-        
-    }
-    public Cube(int i){
-        
-    }
-    public Cube(double i){
-        
-    }
-    public Cube(double i,double j){
-        
+class Enemy{
+    private int health = 10;
+    private String name;
+
+    private void die(){
+        System.out.println("The " + name + "has passed away.");
+        name = "deceased " + name;
     }
 
-    public void show(){
-        for(int i = 0; i < 6; i++){
-            for(int j = 0; j < 3; j++){
-                for(int k = 0; k < 3; k++){
-                    System.out.print(this.value[i][j][k]);
-                }       
-                System.out.println();    
-            }          
-            System.out.println();    
- 
+    public Enemy(String N){
+        name = N;
+        System.out.println(name + " has come to battle");
+    }
+
+    public void askName(){
+        System.out.println("I am " + name);
+    }
+
+    public void battle(){C
+        health--;
+        System.out.println(name + " has been hurt, health is now " + health);
+
+        if(health == 0){
+            die();
         }
     }
-
 }
 
 
 public class Hello {
-
-
     public static void main(String[] args){
+        Enemy ogre = new Enemy("Ogre");
 
-        Hello hello = new Hello();
+        ogre.askName();
 
+        for(int i =0; i<10; i++){
+            ogre.battle();
+        }
 
-        new Cube().show();
-        new Cube(5, 5.0);
+        ogre.askName();
 
     }
 }
