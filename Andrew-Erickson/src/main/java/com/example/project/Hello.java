@@ -4,18 +4,21 @@ public class Hello {
 
  static void main(String[]){
 
-        system.out.print(sayingHello);
+        Cat Crayon = new Cat("Crayon");
 
+        Dog Tyskie = new Dog("Tyskie");
+
+        Parrot Azores = new Dog("Azores");
     }
 
-static void Helloo(String[]){
-
-        String sayingHello = "Hello world!";
-        system.out.println(sayingHello);
-
-        
-    }
-
-
+    
+   
+}
+  
+}
 }
 
+}
+  
+}
+}

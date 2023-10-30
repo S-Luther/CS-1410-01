@@ -1,36 +1,22 @@
-public class Friend {
-    private boolean happy;
-    private String name;
+package com.example.project;
 
-    public Friend(String N){
-        name = N;
-    }
-
-    public void makeHappy(){
-        happy = true;
-    }
-
-    public void makeSad(){
-        happy = false;
-    }
-
-    public String getName(){
-        return name;
-    }
-
-    public boolean isHappy(){
-        return happy;
-    }
-}
 public class Hello{
-    public static void main(String[] args){
-        Friend first = new Friend("Peter");
-        Friend second = new Friend("Maddy");
+    public static void main(String[]{
+        Cat pinky = new Cat("pinky");
+        Dog james = new Dog("james");
+        Parrot blue = new Parrot("neptune");
+        
+        System.out.println(pinky.getName() + "'s mood: " + pinky.getMood());
+        System.out.println(james.getName() + "'s mood: " + james.getMood());
+        System.out.println(neptune.getName() + "'s mood: " + neptune.getMood());
 
-        first.makeHappy();
-        second.makeSad();
+        pinky.play();
+        james.goForAWalk();
+        neptune.talk();
 
-        System.out.println(first.getName() + " is happy:" + first.isHappy());
-        System.out.println(second.getName() + " is happy:" + second.isHappy());
+        System.out.println(pinky.getName() + "'s mood after playing is: " + pinky.getMood());
+        System.out.println(james.getName() + "'s mood after going on a walk is: " + james.getMood());
+        System.out.println(neptune.getName() + "'s mood after talking is: " + neptune.getMood());
+
     }
 }

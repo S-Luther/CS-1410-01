@@ -1,35 +1,17 @@
 package com.example.project;
     
-    class friend{
-        private boolean happy;
-        private String name;
-        
-        public friend(String N){
-            name = N;
+    public class Hello{
 
-        }
-        public void makeHappy(){
-            happy = true;
-            if(happy == true){
-                System.out.println("woohoo! u r happy!");
+        public static void main(String[] args) {
+            
+            Cat mittens = new Cat("Mittens");
 
-            }
-        }
-        public void makeSad(){
-            happy = false;
-            if(happy == false){
-                System.out.println("nooo u r sad.");
-            }
-        }
-        
-    }
+            Dog bud = new Dog("Bud");
 
-public class Hello{
-    public static void main(String[] args){
+            Parrot frank  = new Parrot("Frank");
 
-        friend fred = new friend("fred");
-        fred.makeHappy();
-        fred.makeSad();
 
     }
-}
+
+    }
+    

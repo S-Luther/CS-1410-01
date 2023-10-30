@@ -6,7 +6,7 @@ class Friend{
     private boolean happy;
     private String name;
 
-    public Frind(String N){
+    public void Friend(String N){
 
         name = N;
     }
