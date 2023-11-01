@@ -7,6 +7,7 @@ public class Dog{
     private int mood = 3;
     private int energy = 3;
     private int hunger = 3;
+    private int pain = 3;
     //5 is high, 1 is low
     //idk how much energy to start with
 
@@ -51,6 +52,14 @@ public class Dog{
         if(hunger == 0){
             System.out.println("A puppy named " + name + " is well-fed!");
         }
+    }
+    public String getName(){
+        return name;
+
+    
+    public void fight(){
+        
+    }
     }
     
 }

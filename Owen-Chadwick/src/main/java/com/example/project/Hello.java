@@ -7,10 +7,10 @@ public class Hello {
 	Cat cat1 = new Cat("Puss in Boots");
 	Parrot parrot1 = new Parrot("Squaks McGee");
 	dog1.getName();
-	dog1.getEnergy();
-	dog1.getHunger();
-	dog1.getMood();
 	cat1.getName();
 	parrot1.getName();
+	System.out.println(cat1.feed());
+		System.out.println(cat1.giveYarn(););
+
     }
 }

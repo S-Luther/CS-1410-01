@@ -26,7 +26,12 @@ class Cat{
     public String feed(){
         hunger += 2;
         energy += 1;
+        return "You fed " + cat1.getName() + " his hunger is now "+ gethunger();
     }
-    
+    public String giveYarn(){
+        mood+=3;
+        energy-=1;
+        return "You gave " + cat1.getName() +" a ball of yarn, his mood is now " + cat1.getMood() + " and his energy is now " + cat1.getEnergy(); 
+    }
     
 }

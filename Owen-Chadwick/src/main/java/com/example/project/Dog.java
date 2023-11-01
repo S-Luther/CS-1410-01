@@ -22,5 +22,13 @@ class Dog{
         public int getEnergy(){
         return energy;
     }
-    
+    public String feed(){
+        hunger+=2;
+        energy+=1;
+        return "You fed " + dog1.getName() + "his hunger is " + getHunger();
+    }
+    public String giveBath(){
+        mood-=3;
+        return "You gave " + dog1.getName() + " a bath, his mood is " + getMood();
+    }
 }

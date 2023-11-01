@@ -15,7 +15,7 @@ package com.example.project;
         private void Hunger(){
             Hunger ++;
             System.out.println(name + " has eaten.");
-            }
+            
 
             if(Hunger == 0){
 
@@ -23,6 +23,7 @@ package com.example.project;
         
             }
 
+            System.out.println("Hunger level for " + name + " is currently " + Hunger);
         }
 
         private void Mood(){
@@ -39,6 +40,8 @@ package com.example.project;
             if(Energy == 0){
                 (name + " is ready for a nap.");
                             }
+
+        }
 
         }
 

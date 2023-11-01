@@ -9,15 +9,13 @@ public class Hello {
         Dog Tyskie = new Dog("Tyskie");
 
         Parrot Azores = new Dog("Azores");
-    }
 
+        Arthur.fightGoblin(gary);
+
+
+    }
     
    
-}
-  
-}
-}
-
 }
   
 }

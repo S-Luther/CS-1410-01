@@ -3,31 +3,17 @@ public class Hello{
   public static void main(String[] args){
   
 
-//   Player p = new Player("Arthur");
+Dog walter = new Dog("Walter");
 
-//   Goblin gary = new Goblin("Gary");
+Cat patrice = new Cat("Patrice");
 
-//   Ogre shrek = new Ogre("Shrek");
+Parrot gertrude = new Parrot("Gertrude");
 
-//   Arthur.fightGoblin(gary);
+patrice.fightDog(walter);
 
-//   Arthur.fightGoblin(gary);
+walter.fightCat(patrice);
 
-//   Arthur.fightGoblin(gary);
-
-//   Arthur.fightGoblin(gary);
-
-//   Arthur.fightGoblin(gary);
-
-Dog walter = new Walter("Walter");
-
-Cat patrice = new Patrice("Patrice");
-
-Parrot gertrude = new Gertrude("Gertrude");
-
-
-
-
+//^^just wanna throw this in there...
 
 
   }

@@ -17,7 +17,7 @@ private void talk(){
 }
 private void feed(){
     energy++; 
-    hunger--;
+    Hunger--;
 }
 
 }
@@ -25,6 +25,13 @@ public String getName(){
         return name;
     }
 
-    public int getHealth(){
-        return health;
+    public int getMood(){
+        return mood;
     }
+public int getHunger(){
+        return Hunger;
+    }
+public int getEnergy(){
+        return energy;
+    }
+    

@@ -17,9 +17,9 @@ public class Dog {
     }
 
     public void printStats() {
-        System.out.println(mood);
-        System.out.println(hunger);
-        System.out.println(energy);
+        System.out.println("Mood: " + mood);
+        System.out.println("Hunger: " + hunger);
+        System.out.println("Energy: " + energy);
     }
 
     public void throwFrisbee() {
