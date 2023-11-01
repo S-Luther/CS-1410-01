@@ -1,23 +1,15 @@
 package com.example.project;
 
-public class Ogre {
-    private String name;
-    private int health = 400;
-
-    private void die(){
-        System.out.println(name + " has passed away.");
-        name = "deceased " + name;
-    }
+public class Ogre extends Enemy{
 
     public Ogre(String n){
         name = n;
-        System.out.println("An Ogre named "+name + " has entered the field of battle.");
+        health = 40;
+        location[0] = 2;
+        location[1] = 5;
     }
 
-    public void battle(){
-        health--;
-        if(health == 0){
-            die();
-        }
-    }
+
+    
+    
 }

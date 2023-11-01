@@ -1,6 +1,7 @@
 package com.example.project;
 
-public class parrots {
+public class parrots extends Pet{
+
 private String name;
     private int mood = 6;
     private int Hunger = 3;

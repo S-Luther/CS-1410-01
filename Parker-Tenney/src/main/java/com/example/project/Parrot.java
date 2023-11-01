@@ -1,25 +1,14 @@
 package com.example.project;
 
-public class Parrot {
+public class Parrot extends Pet {
 
-    private String name;
-    private int mood = 5;
-    private int hunger = 2; 
-    private int energy = 3;
-
-    public String getName(){
-        return name;
-    }
+    mood = 5;
+    hunger = 2; 
+    energy = 3;
 
     public Parrot(String n) {
         name = n;
         System.out.println("I have a parrot named " + name + ".");
-    }
-
-    public void printStats() {
-        System.out.println("Mood: " + mood);
-        System.out.println("Hunger: " + hunger);
-        System.out.println("Energy: " + energy);
     }
 
     public void talk() {
@@ -37,8 +26,5 @@ public class Parrot {
         energy--;
     }
 
-    public void sleep() {
-        energy++;
-    }
 
 }

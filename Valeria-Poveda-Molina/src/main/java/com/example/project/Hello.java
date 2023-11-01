@@ -1,7 +1,7 @@
 package com.example.project;
 
 public class Hello{
-    public static void main(String[]{
+    public static void main(String[]){
         Cat pinky = new Cat("pinky");
         Dog james = new Dog("james");
         Parrot blue = new Parrot("neptune");

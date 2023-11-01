@@ -1,6 +1,6 @@
 package com.example.project;
 
-public class Dog {
+public class Dog extends Pet{
 private String name;
     private int mood = 4;
     private int Hunger = 5;
@@ -11,19 +11,14 @@ public Dog(String n){
         System.out.println(  name + " jump to you");
     }
 
-private void goOnAWalk(){
-    mood++; 
-    energy--;
+
 }
 private void feed(){
     energy++; 
     Hunger--;
 }
-private void play ball(){
-    energy--;
-    mood++;
-    Hunger++;
-}
+
+
 public String getName(){
         return name;
     }
@@ -40,4 +35,3 @@ public int getEnergy(){
 
 
 
-}

@@ -10,7 +10,7 @@ public class Hello {
 	cat1.getName();
 	parrot1.getName();
 	System.out.println(cat1.feed());
-		System.out.println(cat1.giveYarn(););
+		System.out.println(cat1.giveYarn());
 
     }
 }
