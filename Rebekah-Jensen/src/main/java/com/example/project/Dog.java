@@ -1,7 +1,17 @@
 package com.example.project;
 
-public class Dog{
+public class Dog extends Pet implements Food, Speak{
+    //it looks like Pet.java is in a slightly different folder from Dog.java
+    
+public void speak(){
+    System.out.println("Arf!");
 
+}
+
+public void food(){
+    String dogfood = "Fancy Feast";
+    
+}
     private String name;
     name = n;
     private int mood = 3;

@@ -18,11 +18,6 @@ public String getName(){
         public int getEnergy(){
         return energy;
     }
-    public String feed(){
-        hunger+=2;
-        energy+=1;
-        
-        return "You fed " + name + "his hunger is " + getHunger();
-    }
+    
 
 }

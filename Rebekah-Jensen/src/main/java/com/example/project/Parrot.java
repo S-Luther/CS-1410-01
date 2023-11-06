@@ -1,6 +1,16 @@
 package com.example.project;
 
-public class Parrot{
+public class Parrot extends Pet implements Food, Speak{
+
+    public void speak(){
+        System.out.println("Squawk!")
+    }
+
+    public void food(){
+        String parrotfood = "Humans";
+        
+    }
+
     private String name;
     name = n;
     private int mood = 3;

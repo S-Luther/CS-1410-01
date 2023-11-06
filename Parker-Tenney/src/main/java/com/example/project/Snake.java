@@ -1,12 +1,13 @@
 package com.example.project;
 
-public class Snake {
+public class Snake extends Pet implements Feedable {
 
-    mood = 2;
-    energy = 4;
-    hunger = 3;
+
 
     public Snake(String n) {
+        mood = 2;
+        energy = 4;
+        hunger = 3;
         name = n;
         System.out.println("I have a snake named " + name + ".");
     }
@@ -16,8 +17,10 @@ public class Snake {
         mood++;
     }
 
-    public void eatMouse() {
+    public void feed() {
         hunger--;
+        mood--;
+        System.out.println(name + " is eating a hamster");
     }
 
     public void shedSkin() {

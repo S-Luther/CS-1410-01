@@ -1,6 +1,15 @@
 package com.example.project;
 
-public class Cat{
+public class Cat extends Pet implements Food, Speak{
+
+    public void speak(){
+        System.out.println("Meow!");
+    }
+
+    public void food(){
+        String catfood = "Tuna fish";
+        
+    }
 
     private String name;
     name = n;
@@ -19,7 +28,11 @@ public class Cat{
         mood++;
         energy++;
         hunger--;
+            if(hunger == 5){
+        System.out.println("Tuna fish, please!");
+        }
     }
+
 
     public void leaveCatAloneToChill(){
         mood++;
@@ -30,6 +43,9 @@ public class Cat{
         mood++;
         energy--;
         //they will probably feel sleepy
+        if(energy == 0){
+            System.out.println("Leave me alone.");
+        }
       
     }
 

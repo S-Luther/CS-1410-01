@@ -1,13 +1,27 @@
 package com.example.project;
 
-    public class Parrot extends Pet {
+    public class Parrot extends Pet implements Feed {
 
+    name = "Tyskie";
     Hunger = 1;
     Energy = 0;
     Mood = false;
+// you 
 
-    System.out.println("Hunger is at " + Hunger ", energy is " + Energy + ", ");
+    public void feed(){
 
-        
+        String food = "Parrot pellets and government agents";
+
+    }
+
+
+    System.out.println("Hunger is at " + Hunger);
+    
+    System.out.println("Energy is at " + Energy);
+
+    System.out.println("Mood is currently " + Mood);
+
+    System.out.println(name + " desires " + food);
+
 
     }

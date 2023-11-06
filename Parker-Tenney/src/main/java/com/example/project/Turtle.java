@@ -1,12 +1,13 @@
 package com.example.project;
 
-public class Turtle extends Pet {
+public class Turtle extends Pet implements Feedable {
 
-    mood = 6;
-    hunger = 3;
-    energy = 1;
+
 
     public Turtle(String n) {
+        mood = 6;
+        hunger = 3;
+        energy = 1;
         name = n;
         System.out.println("I have a turtle named " + name + ".");
     }
@@ -21,9 +22,10 @@ public class Turtle extends Pet {
         energy--;
     }
 
-    public void eatPlants() {
+    public void feed() {
         hunger--;
         energy--;
+        System.out.println(name + " is eating some ferns");
     }
 
 }

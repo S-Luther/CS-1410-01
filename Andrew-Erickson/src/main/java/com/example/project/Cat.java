@@ -19,7 +19,7 @@ package com.example.project;
 
             if(Hunger == 0){
 
-                name = name + " has starved :( ."
+                name = name + " has starved :( .";
         
             }
 
@@ -31,7 +31,7 @@ package com.example.project;
 
             if(Mood == 0){
 
-                name = name + " is currently sad :( ."
+                name = name + " is currently sad :( .";
         
             }
 

@@ -9,8 +9,8 @@ public class Hello {
 	dog1.getName();
 	cat1.getName();
 	parrot1.getName();
-	System.out.println(cat1.feed());
-		System.out.println(cat1.giveYarn());
-
+	cat1.feed();
+	cat1.giveYarn();
+	cat1.speak();
     }
 }

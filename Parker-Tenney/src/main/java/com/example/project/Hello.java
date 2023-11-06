@@ -6,14 +6,14 @@ public class Hello {
     public static void main(String[] args){
         
         Cat Dog = new Cat("Dog");
-        Dog.eatWetFood();
+        Dog.feed();
         Dog.sleep();
         Dog.meow();
         Dog.escapeOutside();
         Dog.printStats();
 
         Dog Cat = new Dog("Cat");
-        Cat.eatKibble();
+        Cat.feed();
         Cat.throwFrisbee();
         Cat.sleep();
         Cat.printStats();
@@ -21,7 +21,7 @@ public class Hello {
         Parrot Bartholomew = new Parrot("King Bartholomew II");
         Bartholomew.fly();
         Bartholomew.talk();
-        Bartholomew.catchMouse();
+        Bartholomew.feed();
         Bartholomew.sleep();
         Bartholomew.printStats();
 
