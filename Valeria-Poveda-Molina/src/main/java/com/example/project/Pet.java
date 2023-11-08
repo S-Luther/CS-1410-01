@@ -1,40 +1,40 @@
 package com.example.project;
 
 public class Pet{
-    protected String name;
-    protected int mood;
-    protected int hunger;
-    protected int energy;
+    private int mood;
+    private int hunger;
+    private int energy;
 
-    public Pet(String name){
-        this.name = name;
-        mood = 100;
-        hunger = 100;
-        energy = 100;
-    }
-
-    public void play(){
-        mood+= 10;
-        energy -= 5;
-    }
-
-    public void feed(){
-        hunger -= 5;
-    }
-
-    public String getName(){
-        return name;
+    public Pet(int mood, int hunger, int energy){
+        this.mood = mood;
+        this.hunger = hunger;
+        this.energy = energy;
+        
     }
 
     public int getMood(){
         return mood;
     }
 
-    public int getHunger(){
-        return hunger;
+    public void setMood(int mood){
+        this.mood = mood;
     }
 
     public int getEnergy(){
         return energy;
     }
+
+    public void setEnergy(int energy){
+        this.enery = energy;
+    }
+
+    public int getHunger(){
+        return hunger;
+    }
+
+
+    public void setHunger(int hunger){
+        this.hunger = hunger;
+    }
+
 }

@@ -11,14 +11,14 @@ class Dog extends pet implements eatsnspeaks{
         return "You gave " + name + " a bath, his mood is " + getMood();
     }
     public void feed() {
-        System.out.println("You fed " + name + " treats.");
+        System.out.println("You fed " + name + " doggy treats.");
         energy++;
         hunger+=3;
         System.out.println(name +"'s hunger is now " + hunger + " and energy is now "+ energy);
     }
 
     public void speak() {
-        System.out.println("meow");
+        System.out.println("wuff");
     }
     
 }

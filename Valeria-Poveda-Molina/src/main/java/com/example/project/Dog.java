@@ -1,9 +1,17 @@
 package com.example.project;
 
-public class Dog extends Pet {
-    public Dog(String name) {
-        super(name);
+import com.example.project.Interaction;
+
+public class Dog extends Pet implements Interaction {
+    public Dog(int mood, int hunger, int energy) {
+        super(mood, hunger, energy);
     }
+    @Override
+    public void feed(){
+    }
+
+    @Override
+    public void speak(){
 
 }
    

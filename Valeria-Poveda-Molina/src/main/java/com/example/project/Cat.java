@@ -1,8 +1,18 @@
 package com.example.project;
 
-public class Cat extends Pet {
-    public Cat(String name){
-        super(name);
+import com.example.project.Interaction;
+
+
+public class Cat extends Pet implements Interaction {
+    public Cat(int mood, int hunger, int energy) {
+        super(mood, hunger, energy);
+    }
+    @Override
+    public void feed(){
+    }
+
+    @Override
+    public void speak(){
     }
 
 }
